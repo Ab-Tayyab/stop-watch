@@ -11,14 +11,14 @@ const Timer = () => {
         backgroundSize: 'cover'
     };
 
-    const [time, setTime] = useState({s: 0, m: 0, h: 0 });
+    const [time, setTime] = useState({ s: 0, m: 0, h: 0 });
     const [interv, setInterv] = useState();
     const [status, setStatus] = useState(0);
 
     const start = () => {
         run();
         setStatus(1);
-        setInterv(setInterval(run, 1000));
+        setInterval(setInterval(run, 1000));
     };
 
     var updatedS = time.s, updatedM = time.m, updatedH = time.h;
@@ -53,7 +53,7 @@ const Timer = () => {
         <Box sx={{
             width: "100%",
             height: "500px",
-            pt:"200px"
+            pt: "150px"
         }}>
             <Box style={divStyle} sx={{
                 margin: "auto",
